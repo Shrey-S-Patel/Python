@@ -9,6 +9,32 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "greeting",
         "kind": 5,
         "importPath": "Lesson 1.kemCho",
@@ -213,6 +239,51 @@
         "description": "Lesson 4.dataTypes",
         "peekOfCode": "zip_value = int(\"Nairobi\")",
         "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "RPS",
+        "kind": 6,
+        "importPath": "Lesson 5.rps",
+        "description": "Lesson 5.rps",
+        "peekOfCode": "class RPS(Enum):\n    ROCK = 1\n    PAPER = 2\n    SCISSORS = 3\n# Different ways to check Enums:\n# print(RPS(2))\n# print(RPS.ROCK)\n# print(RPS[\"ROCK\"])\n# print(RPS.ROCK.value)\n# sys.exit()",
+        "detail": "Lesson 5.rps",
+        "documentation": {}
+    },
+    {
+        "label": "player_choice",
+        "kind": 5,
+        "importPath": "Lesson 5.rps",
+        "description": "Lesson 5.rps",
+        "peekOfCode": "player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\nplayer = int(player_choice)\n# Let's introduce some control-flow statements\nif player < 1 or player >3:\n    sys.exit(\"Please enter a valid choice!\") # This will exit the program but still display the message given in brackets.\ncomputer_choice = random.choice(\"123\")\ncomputer = int(computer_choice)\nprint(\"\")\nprint(\"You chose \" + str(RPS(player)).replace(\"RPS.\", \"\") + \".\")\nprint(\"Python chose \" + str(RPS(computer)).replace(\"RPS.\", \"\") + \".\")",
+        "detail": "Lesson 5.rps",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "Lesson 5.rps",
+        "description": "Lesson 5.rps",
+        "peekOfCode": "player = int(player_choice)\n# Let's introduce some control-flow statements\nif player < 1 or player >3:\n    sys.exit(\"Please enter a valid choice!\") # This will exit the program but still display the message given in brackets.\ncomputer_choice = random.choice(\"123\")\ncomputer = int(computer_choice)\nprint(\"\")\nprint(\"You chose \" + str(RPS(player)).replace(\"RPS.\", \"\") + \".\")\nprint(\"Python chose \" + str(RPS(computer)).replace(\"RPS.\", \"\") + \".\")\nprint(\"\")",
+        "detail": "Lesson 5.rps",
+        "documentation": {}
+    },
+    {
+        "label": "computer_choice",
+        "kind": 5,
+        "importPath": "Lesson 5.rps",
+        "description": "Lesson 5.rps",
+        "peekOfCode": "computer_choice = random.choice(\"123\")\ncomputer = int(computer_choice)\nprint(\"\")\nprint(\"You chose \" + str(RPS(player)).replace(\"RPS.\", \"\") + \".\")\nprint(\"Python chose \" + str(RPS(computer)).replace(\"RPS.\", \"\") + \".\")\nprint(\"\")\nif player == 1 and computer ==3:\n    print(\"🎉 You Win!\")\nelif player == 2 and computer ==1:\n    print(\"🎉 You Win!\")",
+        "detail": "Lesson 5.rps",
+        "documentation": {}
+    },
+    {
+        "label": "computer",
+        "kind": 5,
+        "importPath": "Lesson 5.rps",
+        "description": "Lesson 5.rps",
+        "peekOfCode": "computer = int(computer_choice)\nprint(\"\")\nprint(\"You chose \" + str(RPS(player)).replace(\"RPS.\", \"\") + \".\")\nprint(\"Python chose \" + str(RPS(computer)).replace(\"RPS.\", \"\") + \".\")\nprint(\"\")\nif player == 1 and computer ==3:\n    print(\"🎉 You Win!\")\nelif player == 2 and computer ==1:\n    print(\"🎉 You Win!\")\nelif player == 3 and computer ==2:",
+        "detail": "Lesson 5.rps",
         "documentation": {}
     }
 ]
