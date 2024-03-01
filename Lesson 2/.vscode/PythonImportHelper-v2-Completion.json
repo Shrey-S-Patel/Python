@@ -1,0 +1,29 @@
+[
+    {
+        "label": "line01",
+        "kind": 5,
+        "importPath": "welcome",
+        "description": "welcome",
+        "peekOfCode": "line01 = \"******************************\"  # This is a header/footer\nline02 = \"*                            *\"  # We Re-use this\nline03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "welcome",
+        "documentation": {}
+    },
+    {
+        "label": "line02",
+        "kind": 5,
+        "importPath": "welcome",
+        "description": "welcome",
+        "peekOfCode": "line02 = \"*                            *\"  # We Re-use this\nline03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "welcome",
+        "documentation": {}
+    },
+    {
+        "label": "line03",
+        "kind": 5,
+        "importPath": "welcome",
+        "description": "welcome",
+        "peekOfCode": "line03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "welcome",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "label": "meaning",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "meaning = 55\nprint(\"\")\n# if meaning > 10:\n#     print(\"Good Answer!\")\n# else:\n#     print(\"Bad Answer!\")\n# There's an even better solution to the if else statement\n# Just use a ternary operator.\nprint(\"Good Answer!\") if meaning > 10 else print(\"Bad Answer!\")",
+        "detail": "operators",
+        "documentation": {}
+    }
+]

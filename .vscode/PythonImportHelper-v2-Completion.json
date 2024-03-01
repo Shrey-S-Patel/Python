@@ -1,0 +1,218 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "greeting",
+        "kind": 5,
+        "importPath": "Lesson 1.kemCho",
+        "description": "Lesson 1.kemCho",
+        "peekOfCode": "greeting = 'Kem Cho?'\nprint(greeting)",
+        "detail": "Lesson 1.kemCho",
+        "documentation": {}
+    },
+    {
+        "label": "line01",
+        "kind": 5,
+        "importPath": "Lesson 2.welcome",
+        "description": "Lesson 2.welcome",
+        "peekOfCode": "line01 = \"******************************\"  # This is a header/footer\nline02 = \"*                            *\"  # We Re-use this\nline03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "Lesson 2.welcome",
+        "documentation": {}
+    },
+    {
+        "label": "line02",
+        "kind": 5,
+        "importPath": "Lesson 2.welcome",
+        "description": "Lesson 2.welcome",
+        "peekOfCode": "line02 = \"*                            *\"  # We Re-use this\nline03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "Lesson 2.welcome",
+        "documentation": {}
+    },
+    {
+        "label": "line03",
+        "kind": 5,
+        "importPath": "Lesson 2.welcome",
+        "description": "Lesson 2.welcome",
+        "peekOfCode": "line03 = \"*          WELCOME!          *\"\n# Starts with a blank line\nprint(\"\")\nprint(line01)\nprint(line02)\nprint(line03)\nprint(line02)\nprint(line01)",
+        "detail": "Lesson 2.welcome",
+        "documentation": {}
+    },
+    {
+        "label": "meaning",
+        "kind": 5,
+        "importPath": "Lesson 3.operators",
+        "description": "Lesson 3.operators",
+        "peekOfCode": "meaning = 55\nprint(\"\")\n# if meaning > 10:\n#     print(\"Good Answer!\")\n# else:\n#     print(\"Bad Answer!\")\n# There's an even better solution to the if else statement\n# Just use a ternary operator.\nprint(\"Good Answer!\") if meaning > 10 else print(\"Bad Answer!\")",
+        "detail": "Lesson 3.operators",
+        "documentation": {}
+    },
+    {
+        "label": "first",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "first = \"Shrey\"\nlast = \"Patel\"\n# print(type(first))\n# print(type(first) == str)\n# print(isinstance(first, str))\n# 2. Can also assign a string to a variable using the string constructor function.\nvada = str(\"pav\")\n# print(type(vada))\n# print(type(vada) == str)\n# print(isinstance(vada, str))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "last",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "last = \"Patel\"\n# print(type(first))\n# print(type(first) == str)\n# print(isinstance(first, str))\n# 2. Can also assign a string to a variable using the string constructor function.\nvada = str(\"pav\")\n# print(type(vada))\n# print(type(vada) == str)\n# print(isinstance(vada, str))\n# Concatenation",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "vada",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "vada = str(\"pav\")\n# print(type(vada))\n# print(type(vada) == str)\n# print(isinstance(vada, str))\n# Concatenation\nfullname = first + \" \" + last\n# print(fullname)\nfullname += \"!\"\n# print(fullname)\n# You can also take a different data type and cast it to a string.",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "fullname",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "fullname = first + \" \" + last\n# print(fullname)\nfullname += \"!\"\n# print(fullname)\n# You can also take a different data type and cast it to a string.\ndecade = str(1980)\n# print(type(decade))\n# Multiple lines\nmultiline = \"\"\"\nKem Cho ?",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "decade",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "decade = str(1980)\n# print(type(decade))\n# Multiple lines\nmultiline = \"\"\"\nKem Cho ?\nMajama?\n                        Ha ha Tame bolo\nJovo ne, Majama!\n\"\"\"\n# print(multiline)",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "multiline",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "multiline = \"\"\"\nKem Cho ?\nMajama?\n                        Ha ha Tame bolo\nJovo ne, Majama!\n\"\"\"\n# print(multiline)\n# Moving on to escaping special characters in Python Strings\n# \\  = This backslash escapes the next character after it.\n# \\t = This is used to get a tab.",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "sentence = \"I'm back at work!\\tHey!\\n\\nWhere's this at\\\\located?\"\n# print(sentence)\n# String Methods\n# print(first)\n# print(first.lower())\n# print(first.upper())\n# print(first)\n# print(multiline.title())  # This will be used to capitalize every word's first letter\n# print(multiline.replace(\"Majama\", \"Barobar\"))\n# When creating a string, all the whitespace characters also account for its length.",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "title = \"menu\".upper()\nprint(title.center(20, \"=\"))\nprint(\"Coffee \".ljust(16, \".\") + \"$4\".rjust(4))\nprint(\"Croissant \".ljust(16, \".\") + \"$3\".rjust(4))\nprint(\"Juice \".ljust(16, \".\") + \"$1\".rjust(4))\nprint(\" \")\n# String index values\nprint(\n    first[1]\n)  # This does not give you the first letter of my name, instead it gives you the second letter because indexing in python starts at 0.",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "myvalue",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "myvalue = True\nx = bool(False)  # This is the constructor method to create a Boolean variable.\nprint(type(x))\nprint(isinstance(x, bool))\nprint(\" \")\n# Let's move on to numeric data types\n# Integer\nprice = 100\nbest_price = int(80)\nprint(type(price))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "x = bool(False)  # This is the constructor method to create a Boolean variable.\nprint(type(x))\nprint(isinstance(x, bool))\nprint(\" \")\n# Let's move on to numeric data types\n# Integer\nprice = 100\nbest_price = int(80)\nprint(type(price))\nprint(isinstance(best_price, int))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "price",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "price = 100\nbest_price = int(80)\nprint(type(price))\nprint(isinstance(best_price, int))\n# Float Type - Has a Decimal\ngpa = 3.89\ny = float(1.62)\nprint(type(gpa))\n# Complex Type\ncomp_value = 5 + 3j",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "best_price",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "best_price = int(80)\nprint(type(price))\nprint(isinstance(best_price, int))\n# Float Type - Has a Decimal\ngpa = 3.89\ny = float(1.62)\nprint(type(gpa))\n# Complex Type\ncomp_value = 5 + 3j\nprint(type(comp_value))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "gpa",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "gpa = 3.89\ny = float(1.62)\nprint(type(gpa))\n# Complex Type\ncomp_value = 5 + 3j\nprint(type(comp_value))\nprint(comp_value.real)\nprint(comp_value.imag)\n# Built-in functions for numbers\nprint(abs(gpa))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "y = float(1.62)\nprint(type(gpa))\n# Complex Type\ncomp_value = 5 + 3j\nprint(type(comp_value))\nprint(comp_value.real)\nprint(comp_value.imag)\n# Built-in functions for numbers\nprint(abs(gpa))\nprint(round(gpa))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "comp_value",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "comp_value = 5 + 3j\nprint(type(comp_value))\nprint(comp_value.real)\nprint(comp_value.imag)\n# Built-in functions for numbers\nprint(abs(gpa))\nprint(round(gpa))\nprint(round(gpa, 1))\nprint(math.pi)\nprint(math.sqrt(81))",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "zipcode",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "zipcode = \"15228\"\nzip_value = int(zipcode)\nprint(type(zip_value))\n# This can throw an error if you try to cast an incorrect value to int.\nzip_value = int(\"Nairobi\")",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "zip_value",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "zip_value = int(zipcode)\nprint(type(zip_value))\n# This can throw an error if you try to cast an incorrect value to int.\nzip_value = int(\"Nairobi\")",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    },
+    {
+        "label": "zip_value",
+        "kind": 5,
+        "importPath": "Lesson 4.dataTypes",
+        "description": "Lesson 4.dataTypes",
+        "peekOfCode": "zip_value = int(\"Nairobi\")",
+        "detail": "Lesson 4.dataTypes",
+        "documentation": {}
+    }
+]
