@@ -285,5 +285,140 @@
         "peekOfCode": "computer = int(computer_choice)\nprint(\"\")\nprint(\"You chose \" + str(RPS(player)).replace(\"RPS.\", \"\") + \".\")\nprint(\"Python chose \" + str(RPS(computer)).replace(\"RPS.\", \"\") + \".\")\nprint(\"\")\nif player == 1 and computer ==3:\n    print(\"🎉 You Win!\")\nelif player == 2 and computer ==1:\n    print(\"🎉 You Win!\")\nelif player == 3 and computer ==2:",
         "detail": "Lesson 5.rps",
         "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "users = [\"Jack\", \"Sara\", \"Jacob\"]\ndata = [\"John\", 58, True]\nempty_data = []\na_list = list([1, \"James\", True]) # Even though it's kinda pointless but it's there as a method.\n# This checks whether an element actually exists in a list and returns a Boolean value.\n# print(\"Jack\" in users)\n# This uses the index of an element to retrieve it.\n# print(users[1])\n# print(users[-1])\n# This is used to check the index of the given item in an list.",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "data = [\"John\", 58, True]\nempty_data = []\na_list = list([1, \"James\", True]) # Even though it's kinda pointless but it's there as a method.\n# This checks whether an element actually exists in a list and returns a Boolean value.\n# print(\"Jack\" in users)\n# This uses the index of an element to retrieve it.\n# print(users[1])\n# print(users[-1])\n# This is used to check the index of the given item in an list.\n# print(users.index(\"Sara\")) ",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "empty_data",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "empty_data = []\na_list = list([1, \"James\", True]) # Even though it's kinda pointless but it's there as a method.\n# This checks whether an element actually exists in a list and returns a Boolean value.\n# print(\"Jack\" in users)\n# This uses the index of an element to retrieve it.\n# print(users[1])\n# print(users[-1])\n# This is used to check the index of the given item in an list.\n# print(users.index(\"Sara\")) \n# You can also use ranges to return elements in a list.",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "a_list",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "a_list = list([1, \"James\", True]) # Even though it's kinda pointless but it's there as a method.\n# This checks whether an element actually exists in a list and returns a Boolean value.\n# print(\"Jack\" in users)\n# This uses the index of an element to retrieve it.\n# print(users[1])\n# print(users[-1])\n# This is used to check the index of the given item in an list.\n# print(users.index(\"Sara\")) \n# You can also use ranges to return elements in a list.\n# print(users[0:2])",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "users[2:2]",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "users[2:2] = [\"Eliud\", \"Chiran\"]\n# print(users)\n# You can also replace items in a list using a range and the last item in the range will stay the same.\nusers[1:3] = [\"Chan\", \"Jain\"]\n# print(users)\n# This is how we remove items from a list.\nusers.remove(\"Bob\")\n# print(users)\n# We can remove the last item in the list using the pop method.\n# print(users.pop())",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "users[1:3]",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "users[1:3] = [\"Chan\", \"Jain\"]\n# print(users)\n# This is how we remove items from a list.\nusers.remove(\"Bob\")\n# print(users)\n# We can remove the last item in the list using the pop method.\n# print(users.pop())\n# print(users)\n# We can also just use the del keyword and the user's index to chuck them out of the list.\ndel users[1]",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "users[1:2]",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "users[1:2] = [\"alan\"]\nusers.sort() # This method usually sorts in Ascending order but the Capital letter words are given priority when sorting.\n# print(users)\n# Let's give alan the justice he deserves when sorting by introducing an argument that will allow lowercase names to be sorted accordingly.\nusers.sort(key=str.lower)\n# print(users)\n# Let's look at number Arrays/Lists and their associated functions.\nnums = [5,96,2,75,23,15]\nnums.reverse() # This function literally takes the array and flips the positions the elements.\nprint(nums)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "nums = [5,96,2,75,23,15]\nnums.reverse() # This function literally takes the array and flips the positions the elements.\nprint(nums)\n# nums.sort(reverse=True) \n# This function on the other hand will not reverse it but it will sort in descending order.\n# print(nums)\n# In order to keep the original list and sort it for our purposes we can do the following...\n# We're making use of the global sorted function.\nprint(sorted(nums, reverse=True))\nprint(nums)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "numscopy",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "numscopy = nums.copy()\nprint(numscopy)\n# No. 2 -> Use the list constructor.\nnumscopy1 = list(nums)\nprint(numscopy1)\n# No. 3 -> Use the list range without numbers.\nnumscopy2 = nums[:]\nprint(numscopy2)\n# -------------Tuples-------------\n# Tuples are very much like lists, except the data in them does not change and the order of that data does not change.",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "numscopy1",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "numscopy1 = list(nums)\nprint(numscopy1)\n# No. 3 -> Use the list range without numbers.\nnumscopy2 = nums[:]\nprint(numscopy2)\n# -------------Tuples-------------\n# Tuples are very much like lists, except the data in them does not change and the order of that data does not change.\n# Constructor method\ntuple1 = tuple((1, \"Sam\", False))\nprint(tuple1)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "numscopy2",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "numscopy2 = nums[:]\nprint(numscopy2)\n# -------------Tuples-------------\n# Tuples are very much like lists, except the data in them does not change and the order of that data does not change.\n# Constructor method\ntuple1 = tuple((1, \"Sam\", False))\nprint(tuple1)\n# Normal Method\ntuple2 = (1,5,9,65,2,78,64,23,10,5,5,5,5,5)\nprint(tuple2)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "tuple1",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "tuple1 = tuple((1, \"Sam\", False))\nprint(tuple1)\n# Normal Method\ntuple2 = (1,5,9,65,2,78,64,23,10,5,5,5,5,5)\nprint(tuple2)\n# As mentioned above, tuples cannot be changed. Therefore, what we can do is copy a tuple and perform the action on it.\n# Create a list from the tuple.\ntuplecopy = list(tuple1)\ntuplecopy.append(\"Sara\")\ntuple3 = tuple(tuplecopy)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "tuple2",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "tuple2 = (1,5,9,65,2,78,64,23,10,5,5,5,5,5)\nprint(tuple2)\n# As mentioned above, tuples cannot be changed. Therefore, what we can do is copy a tuple and perform the action on it.\n# Create a list from the tuple.\ntuplecopy = list(tuple1)\ntuplecopy.append(\"Sara\")\ntuple3 = tuple(tuplecopy)\nprint(tuple3)\n# What we have been doing above is creating a tuple by \"Packing\" it.\n# Now we unpack it into different variables.",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "tuplecopy",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "tuplecopy = list(tuple1)\ntuplecopy.append(\"Sara\")\ntuple3 = tuple(tuplecopy)\nprint(tuple3)\n# What we have been doing above is creating a tuple by \"Packing\" it.\n# Now we unpack it into different variables.\n(one, *two, three) = tuple2 # The asterisk is to assign the remainder of the items to one variable as a list.\nprint(one)\nprint(two)\nprint(three)",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
+    },
+    {
+        "label": "tuple3",
+        "kind": 5,
+        "importPath": "Lesson 6.lists",
+        "description": "Lesson 6.lists",
+        "peekOfCode": "tuple3 = tuple(tuplecopy)\nprint(tuple3)\n# What we have been doing above is creating a tuple by \"Packing\" it.\n# Now we unpack it into different variables.\n(one, *two, three) = tuple2 # The asterisk is to assign the remainder of the items to one variable as a list.\nprint(one)\nprint(two)\nprint(three)\n# The tuple has methods available to it\n# Like this count method when passed an argument like a number will count how many instanced=s if that number are there in that tuple.",
+        "detail": "Lesson 6.lists",
+        "documentation": {}
     }
 ]
