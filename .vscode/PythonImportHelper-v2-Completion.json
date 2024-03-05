@@ -420,5 +420,41 @@
         "peekOfCode": "tuple3 = tuple(tuplecopy)\nprint(tuple3)\n# What we have been doing above is creating a tuple by \"Packing\" it.\n# Now we unpack it into different variables.\n(one, *two, three) = tuple2 # The asterisk is to assign the remainder of the items to one variable as a list.\nprint(one)\nprint(two)\nprint(three)\n# The tuple has methods available to it\n# Like this count method when passed an argument like a number will count how many instanced=s if that number are there in that tuple.",
         "detail": "Lesson 6.lists",
         "documentation": {}
+    },
+    {
+        "label": "band",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band = {\n    \"Vocals\": \"Plant\",\n    \"Guitar\": \"Page\"\n}\n# Creating Dictionaries with the constructor method.\nband2 = dict(Vocals = \"Plant\", Guitar = \"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band2",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band2 = dict(Vocals = \"Plant\", Guitar = \"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))\n# Accessing items in a dictionary.\nprint(band[\"Vocals\"])\nprint(band.get(\"Guitar\"))\n# To list all the keys we will.\nprint(band.keys())",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band[\"Vocals\"]",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band[\"Vocals\"] = \"Coverdale\"\nband.update({\"bass\": \"JPJ\"})\nprint(band)\n# After adding now we remove.\n# Using the pop method will usually return a value that we removed from the dictionary.\nprint(band.pop(\"bass\"))\nprint(band)\nband[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band[\"Drums\"]",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.\nprint(band.popitem())\nprint(band)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
     }
 ]
