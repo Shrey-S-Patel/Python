@@ -426,7 +426,7 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band = {\n    \"Vocals\": \"Plant\",\n    \"Guitar\": \"Page\"\n}\n# Creating Dictionaries with the constructor method.\nband2 = dict(Vocals = \"Plant\", Guitar = \"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))",
+        "peekOfCode": "band = {\n    \"Vocals\": \"Plant\",\n    \"Guitar\": \"Page\"\n}\n# Creating Dictionaries with the constructor method.\nband2 = dict(Vocals=\"Plant\", Guitar=\"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     },
@@ -435,7 +435,7 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band2 = dict(Vocals = \"Plant\", Guitar = \"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))\n# Accessing items in a dictionary.\nprint(band[\"Vocals\"])\nprint(band.get(\"Guitar\"))\n# To list all the keys we will.\nprint(band.keys())",
+        "peekOfCode": "band2 = dict(Vocals=\"Plant\", Guitar=\"Page\")\nprint(band)\nprint(band2)\nprint(type(band))\nprint(len(band2))\n# Accessing items in a dictionary.\nprint(band[\"Vocals\"])\nprint(band.get(\"Guitar\"))\n# To list all the keys we will.\nprint(band.keys())",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     },
@@ -453,7 +453,7 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.\nprint(band.popitem())\nprint(band)\n# To delete and clear.\nband[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"] \nprint(band)\n# To completely clear a dictionary we use the clear method.",
+        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.\nprint(band.popitem())\nprint(band)\n# To delete and clear.\nband[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"]\nprint(band)\n# To completely clear a dictionary we use the clear method.",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     },
@@ -462,7 +462,7 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"] \nprint(band)\n# To completely clear a dictionary we use the clear method.\nband2.clear()\nprint(band2)\n# We can also delete the entire dictionary.\ndel band2\n# print(band2)\n# Next, Let's copy some dictionaries.",
+        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"]\nprint(band)\n# To completely clear a dictionary we use the clear method.\nband2.clear()\nprint(band2)\n# We can also delete the entire dictionary.\ndel band2\n# print(band2)\n# Next, Let's copy some dictionaries.",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     },
@@ -525,7 +525,124 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band4 = {\n    \"member1\": member1,\n    \"member2\": member2\n}\nprint(\"\\nLet's look at nested dictionaries. \\nVoila!\")\nprint(band4)\n# How can you access values in a nested dictionary?\nprint(band4[\"member1\"][\"name\"])",
+        "peekOfCode": "band4 = {\n    \"member1\": member1,\n    \"member2\": member2\n}\nprint(\"\\nLet's look at nested dictionaries. \\nVoila!\")\nprint(band4)\n# How can you access values in a nested dictionary?\nprint(band4[\"member1\"][\"name\"])\n# Python Sets\nnums = {1, 2, 3, 4}",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "nums = {1, 2, 3, 4}\nnums2 = set((1, 2, 3, 4))\nprint(nums)\nprint(nums2)\nprint(type(nums2))\nprint(len(nums2))\n# The advantage of a set is that no duplicates are allowed.\nnums = {1, 3, 2, 3, 4, 2}\nprint(nums)  # Will not throw an error, just ignores the duplicates.\n# The True value is a dupe of 1 and the False value is a dupe of 0.",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "nums2",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "nums2 = set((1, 2, 3, 4))\nprint(nums)\nprint(nums2)\nprint(type(nums2))\nprint(len(nums2))\n# The advantage of a set is that no duplicates are allowed.\nnums = {1, 3, 2, 3, 4, 2}\nprint(nums)  # Will not throw an error, just ignores the duplicates.\n# The True value is a dupe of 1 and the False value is a dupe of 0.\nnums = {1, True, 2, False, 3, 4, 0}",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "nums = {1, 3, 2, 3, 4, 2}\nprint(nums)  # Will not throw an error, just ignores the duplicates.\n# The True value is a dupe of 1 and the False value is a dupe of 0.\nnums = {1, True, 2, False, 3, 4, 0}\nprint(nums)\n# You can also check if a value is in a set.\nprint(4 in nums)\n# The funny thing about a set is you cannot reference an item in the set using an index (like in lists) or using a key (like in dictionaries).\n# Adding values to a set\nnums.add(9)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "nums = {1, True, 2, False, 3, 4, 0}\nprint(nums)\n# You can also check if a value is in a set.\nprint(4 in nums)\n# The funny thing about a set is you cannot reference an item in the set using an index (like in lists) or using a key (like in dictionaries).\n# Adding values to a set\nnums.add(9)\nprint(nums)\n# Adding elements from another set to our set.\nmorenums = {5, 6, 7, 8}",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "morenums",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "morenums = {5, 6, 7, 8}\nnums.update(morenums)\nprint(nums)\n# Fun Fact: You can also use the update method with lists, Tuples and Dictionaries.\n# Merge two sets to create a new set.\none = {1, 2, 3}\ntwo = {4, 5, 6}\nthenewset = one.union(two)\nprint(thenewset)\n# Keep only the duplicates",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "one",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "one = {1, 2, 3}\ntwo = {4, 5, 6}\nthenewset = one.union(two)\nprint(thenewset)\n# Keep only the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.intersection_update(two) # This one modifies the first set - one.\nthe_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "two",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "two = {4, 5, 6}\nthenewset = one.union(two)\nprint(thenewset)\n# Keep only the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.intersection_update(two) # This one modifies the first set - one.\nthe_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)\nprint(the_new_set)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "thenewset",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "thenewset = one.union(two)\nprint(thenewset)\n# Keep only the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.intersection_update(two) # This one modifies the first set - one.\nthe_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)\nprint(the_new_set)\n# Keep everything except the duplicates",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "one",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "one = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.intersection_update(two) # This one modifies the first set - one.\nthe_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)\nprint(the_new_set)\n# Keep everything except the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "two",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "two = {2, 3, 4, 5, 6}\none.intersection_update(two) # This one modifies the first set - one.\nthe_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)\nprint(the_new_set)\n# Keep everything except the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)\nprint(one)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "the_new_set",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "the_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.\nprint(one)\nprint(the_new_set)\n# Keep everything except the duplicates\none = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)\nprint(one)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "one",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "one = {1, 2, 3}\ntwo = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)\nprint(one)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "two",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "two = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)\nprint(one)",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     }

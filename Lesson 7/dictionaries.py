@@ -9,7 +9,7 @@ band = {
 }
 
 # Creating Dictionaries with the constructor method.
-band2 = dict(Vocals = "Plant", Guitar = "Page")
+band2 = dict(Vocals="Plant", Guitar="Page")
 
 print(band)
 print(band2)
@@ -52,7 +52,7 @@ print(band)
 
 # To delete and clear.
 band["Drums"] = "Bonham"
-del band["Drums"] 
+del band["Drums"]
 print(band)
 
 # To completely clear a dictionary we use the clear method.
@@ -64,7 +64,7 @@ del band2
 # print(band2)
 
 # Next, Let's copy some dictionaries.
-# band2 = band 
+# band2 = band
 # Now you might think this is a new band dictionary but it is just a reference instead.
 # print("This is a bad copy!")
 # print(band2)
@@ -111,3 +111,59 @@ print(band4)
 # How can you access values in a nested dictionary?
 print(band4["member1"]["name"])
 
+
+# Python Sets
+nums = {1, 2, 3, 4}
+nums2 = set((1, 2, 3, 4))
+
+print(nums)
+print(nums2)
+print(type(nums2))
+print(len(nums2))
+
+# The advantage of a set is that no duplicates are allowed.
+nums = {1, 3, 2, 3, 4, 2}
+print(nums)  # Will not throw an error, just ignores the duplicates.
+
+# The True value is a dupe of 1 and the False value is a dupe of 0.
+nums = {1, True, 2, False, 3, 4, 0}
+print(nums)
+
+# You can also check if a value is in a set.
+print(4 in nums)
+
+# The funny thing about a set is you cannot reference an item in the set using an index (like in lists) or using a key (like in dictionaries).
+
+# Adding values to a set
+nums.add(9)
+print(nums)
+
+# Adding elements from another set to our set.
+morenums = {5, 6, 7, 8}
+nums.update(morenums)
+print(nums)
+
+# Fun Fact: You can also use the update method with lists, Tuples and Dictionaries.
+
+# Merge two sets to create a new set.
+one = {1, 2, 3}
+two = {4, 5, 6}
+
+thenewset = one.union(two)
+print(thenewset)
+
+# Keep only the duplicates
+one = {1, 2, 3}
+two = {2, 3, 4, 5, 6}
+
+one.intersection_update(two) # This one modifies the first set - one.
+the_new_set = one.intersection(two) # This returns the similarities between the set and assigns it to a new set.
+print(one)
+print(the_new_set)
+
+# Keep everything except the duplicates
+one = {1, 2, 3}
+two = {2, 3, 4, 5, 6}
+
+one.symmetric_difference_update(two)
+print(one)
