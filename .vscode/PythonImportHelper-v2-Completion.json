@@ -453,7 +453,79 @@
         "kind": 5,
         "importPath": "Lesson 7.dictionaries",
         "description": "Lesson 7.dictionaries",
-        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.\nprint(band.popitem())\nprint(band)",
+        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\nprint(band)\n# With this we will get the last item in the dictionary but it will return a key:value pair tuple and not a value.\nprint(band.popitem())\nprint(band)\n# To delete and clear.\nband[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"] \nprint(band)\n# To completely clear a dictionary we use the clear method.",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band[\"Drums\"]",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band[\"Drums\"] = \"Bonham\"\ndel band[\"Drums\"] \nprint(band)\n# To completely clear a dictionary we use the clear method.\nband2.clear()\nprint(band2)\n# We can also delete the entire dictionary.\ndel band2\n# print(band2)\n# Next, Let's copy some dictionaries.",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band2",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band2 = band.copy()\nprint(\"\\nThe Right Way!\")\nband2[\"Drums\"] = \"Bonham\"\nprint(band2)\nprint(band)\n# If you like complicating your life use the constructor function, still works.\nband3 = dict(band)\nprint(\"\\nStill The Right Way!\")\nband3[\"Drums\"] = \"Koko\"\nprint(band3)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band2[\"Drums\"]",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band2[\"Drums\"] = \"Bonham\"\nprint(band2)\nprint(band)\n# If you like complicating your life use the constructor function, still works.\nband3 = dict(band)\nprint(\"\\nStill The Right Way!\")\nband3[\"Drums\"] = \"Koko\"\nprint(band3)\nprint(band)\n# Another interesting concept to look at is the Nested Dictionaries.",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band3",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band3 = dict(band)\nprint(\"\\nStill The Right Way!\")\nband3[\"Drums\"] = \"Koko\"\nprint(band3)\nprint(band)\n# Another interesting concept to look at is the Nested Dictionaries.\n# Basically, the value for a key will be another dictionary in this case.\nmember1 = {\n    \"name\": \"Plant\",\n    \"instrument\": \"Vocals\"",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band3[\"Drums\"]",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band3[\"Drums\"] = \"Koko\"\nprint(band3)\nprint(band)\n# Another interesting concept to look at is the Nested Dictionaries.\n# Basically, the value for a key will be another dictionary in this case.\nmember1 = {\n    \"name\": \"Plant\",\n    \"instrument\": \"Vocals\"\n}\nmember2 = {",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "member1",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "member1 = {\n    \"name\": \"Plant\",\n    \"instrument\": \"Vocals\"\n}\nmember2 = {\n    \"name\": \"Page\",\n    \"instrument\": \"Guitar\"\n}\nband4 = {\n    \"member1\": member1,",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "member2",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "member2 = {\n    \"name\": \"Page\",\n    \"instrument\": \"Guitar\"\n}\nband4 = {\n    \"member1\": member1,\n    \"member2\": member2\n}\nprint(\"\\nLet's look at nested dictionaries. \\nVoila!\")\nprint(band4)",
+        "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "band4",
+        "kind": 5,
+        "importPath": "Lesson 7.dictionaries",
+        "description": "Lesson 7.dictionaries",
+        "peekOfCode": "band4 = {\n    \"member1\": member1,\n    \"member2\": member2\n}\nprint(\"\\nLet's look at nested dictionaries. \\nVoila!\")\nprint(band4)\n# How can you access values in a nested dictionary?\nprint(band4[\"member1\"][\"name\"])",
         "detail": "Lesson 7.dictionaries",
         "documentation": {}
     }
