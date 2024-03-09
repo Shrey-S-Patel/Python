@@ -35,6 +35,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "greeting",
         "kind": 5,
         "importPath": "Lesson 1.kemCho",
@@ -644,6 +652,51 @@
         "description": "Lesson 7.dictionaries",
         "peekOfCode": "two = {2, 3, 4, 5, 6}\none.symmetric_difference_update(two)\nprint(one)",
         "detail": "Lesson 7.dictionaries",
+        "documentation": {}
+    },
+    {
+        "label": "value",
+        "kind": 5,
+        "importPath": "Lesson 8.loops",
+        "description": "Lesson 8.loops",
+        "peekOfCode": "value = 1\n# while value <= 10:\n#     print(value)\n#     # To get out of the loop using another condition we can.\n#     if value == 5:\n#         break\n#     value+=1\n\"\"\"\nwhile value <= 10:\n    value+=1",
+        "detail": "Lesson 8.loops",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "Lesson 8.loops",
+        "description": "Lesson 8.loops",
+        "peekOfCode": "names = [\"Dave\", \"Jocelyn\", \"Sara\", \"Maki\", \"Jaya\", \"Anita\", \"Celia\"]\nactions = [\"Works\", \"Eats\", \"Sleeps\"]\n# for name in names:\n#     for action in actions:\n#         print(name + \" \" + action + \".\")\n#     print(\"\")\nfor action in actions:\n    for name in names:\n        print(name + \" \" + action + \".\")\n    print(\"\")",
+        "detail": "Lesson 8.loops",
+        "documentation": {}
+    },
+    {
+        "label": "actions",
+        "kind": 5,
+        "importPath": "Lesson 8.loops",
+        "description": "Lesson 8.loops",
+        "peekOfCode": "actions = [\"Works\", \"Eats\", \"Sleeps\"]\n# for name in names:\n#     for action in actions:\n#         print(name + \" \" + action + \".\")\n#     print(\"\")\nfor action in actions:\n    for name in names:\n        print(name + \" \" + action + \".\")\n    print(\"\")",
+        "detail": "Lesson 8.loops",
+        "documentation": {}
+    },
+    {
+        "label": "RPS",
+        "kind": 6,
+        "importPath": "Lesson 8.rp2",
+        "description": "Lesson 8.rp2",
+        "peekOfCode": "class RPS(Enum):\n    ROCK = 1\n    PAPER = 2\n    SCISSORS = 3\n# Different ways to check Enums:\n# print(RPS(2))\n# print(RPS.ROCK)\n# print(RPS[\"ROCK\"])\n# print(RPS.ROCK.value)\n# sys.exit()",
+        "detail": "Lesson 8.rp2",
+        "documentation": {}
+    },
+    {
+        "label": "playagain",
+        "kind": 5,
+        "importPath": "Lesson 8.rp2",
+        "description": "Lesson 8.rp2",
+        "peekOfCode": "playagain = True\nwhile playagain:\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\n    player = int(player_choice)\n    # Let's introduce some control-flow statements\n    if player < 1 or player >3:\n        sys.exit(\"Please enter a valid choice!\") # This will exit the program but still display the message given in brackets.\n    computer_choice = random.choice(\"123\")",
+        "detail": "Lesson 8.rp2",
         "documentation": {}
     }
 ]
