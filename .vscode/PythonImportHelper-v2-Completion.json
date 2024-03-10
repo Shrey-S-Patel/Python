@@ -698,5 +698,23 @@
         "peekOfCode": "playagain = True\nwhile playagain:\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\n    player = int(player_choice)\n    # Let's introduce some control-flow statements\n    if player < 1 or player >3:\n        sys.exit(\"Please enter a valid choice!\") # This will exit the program but still display the message given in brackets.\n    computer_choice = random.choice(\"123\")",
         "detail": "Lesson 8.rp2",
         "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "def hello():\n    print(\"Kem Cho?\")\n# So we need to call it.\nhello()\n# Next, we can create a function that takes parameters or values.\ndef sum(num1, num2):\n    print(num1+num2)\n# When we call this function and pass it values, these now become arguments.\n# Fun Fact: The easiest way to differentiate between parameters and arguments is that \n# parameters never change, but arguments keep changing with every function call.",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "def sum(num1, num2):\n    print(num1+num2)\n# When we call this function and pass it values, these now become arguments.\n# Fun Fact: The easiest way to differentiate between parameters and arguments is that \n# parameters never change, but arguments keep changing with every function call.\n# The argument is the actual data passed in when the function is called.\nsum(5,4)",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
     }
 ]
