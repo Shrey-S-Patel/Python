@@ -704,7 +704,7 @@
         "kind": 2,
         "importPath": "Lesson 9.functions",
         "description": "Lesson 9.functions",
-        "peekOfCode": "def hello():\n    print(\"Kem Cho?\")\n# So we need to call it.\nhello()\n# Next, we can create a function that takes parameters or values.\ndef sum(num1, num2):\n    print(num1+num2)\n# When we call this function and pass it values, these now become arguments.\n# Fun Fact: The easiest way to differentiate between parameters and arguments is that \n# parameters never change, but arguments keep changing with every function call.",
+        "peekOfCode": "def hello():\n    print(\"Kem Cho?\")\n# So we need to call it.\n# hello()\n# Next, we can create a function that takes parameters or values.\n# I have assigned a default values to the nums incase a value is not provided.\ndef sum(num1 = 0, num2 = 0):\n    if (type(num1) is not int or type(num2) is not int):\n        return # This is what we call an early return and it prevents the coming lines from executing. It just returns none.\n        # return 0 to make it return a zero.",
         "detail": "Lesson 9.functions",
         "documentation": {}
     },
@@ -713,7 +713,43 @@
         "kind": 2,
         "importPath": "Lesson 9.functions",
         "description": "Lesson 9.functions",
-        "peekOfCode": "def sum(num1, num2):\n    print(num1+num2)\n# When we call this function and pass it values, these now become arguments.\n# Fun Fact: The easiest way to differentiate between parameters and arguments is that \n# parameters never change, but arguments keep changing with every function call.\n# The argument is the actual data passed in when the function is called.\nsum(5,4)",
+        "peekOfCode": "def sum(num1 = 0, num2 = 0):\n    if (type(num1) is not int or type(num2) is not int):\n        return # This is what we call an early return and it prevents the coming lines from executing. It just returns none.\n        # return 0 to make it return a zero.\n    return num1+num2\n# When we call this function and pass it values, these now become arguments.\n# Fun Fact: The easiest way to differentiate between parameters and arguments is that \n# parameters never change, but arguments keep changing with every function call.\n# The argument is the actual data passed in when the function is called.\ntotal = sum()",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
+    },
+    {
+        "label": "multiple_items",
+        "kind": 2,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "def multiple_items(*args):\n    print(args)\n    print(type(args))\n# When the single asterisk is used it returns a tuple.\nmultiple_items(\"Donna\", 2, True)\n# If you want to assign names to the arguments then you can use keyword arguments\ndef multi_named_items(**kwargs):\n    print(kwargs)\n    print(type(kwargs))\nmulti_named_items(First = \"Donna\", Last = \"Anderson\")",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
+    },
+    {
+        "label": "multi_named_items",
+        "kind": 2,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "def multi_named_items(**kwargs):\n    print(kwargs)\n    print(type(kwargs))\nmulti_named_items(First = \"Donna\", Last = \"Anderson\")\n# The result from this is a dictionary and i think it will be much more useful than a tuple",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "total = sum()\nprint(total)\n# Sometimes we can have a function where we don't know the number of arguments that will be passed.\n# So we use the args keyword with an asterisk.\ndef multiple_items(*args):\n    print(args)\n    print(type(args))\n# When the single asterisk is used it returns a tuple.\nmultiple_items(\"Donna\", 2, True)\n# If you want to assign names to the arguments then you can use keyword arguments",
+        "detail": "Lesson 9.functions",
+        "documentation": {}
+    },
+    {
+        "label": "multi_named_items(First",
+        "kind": 5,
+        "importPath": "Lesson 9.functions",
+        "description": "Lesson 9.functions",
+        "peekOfCode": "multi_named_items(First = \"Donna\", Last = \"Anderson\")\n# The result from this is a dictionary and i think it will be much more useful than a tuple",
         "detail": "Lesson 9.functions",
         "documentation": {}
     }
