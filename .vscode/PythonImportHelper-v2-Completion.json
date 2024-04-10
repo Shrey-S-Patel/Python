@@ -176,6 +176,33 @@
         "documentation": {}
     },
     {
+        "label": "parent_function",
+        "kind": 2,
+        "importPath": "Lesson 12.closure",
+        "description": "Lesson 12.closure",
+        "peekOfCode": "def parent_function(person):\n    coins = 3\n    def play_game():\n        nonlocal coins\n        coins -= 1\n        if(coins > 1):\n            print(\"\\n\" + person + \" has \" + str(coins) + \" coins left.\")\n        elif( coins == 1):\n            print(\"\\n\" + person + \" has \" + str(coins) + \" coin left.\")\n        else:",
+        "detail": "Lesson 12.closure",
+        "documentation": {}
+    },
+    {
+        "label": "tommy",
+        "kind": 5,
+        "importPath": "Lesson 12.closure",
+        "description": "Lesson 12.closure",
+        "peekOfCode": "tommy = parent_function(\"Tommy\")\njenny = parent_function(\"Jenny\")\ntommy()\ntommy()\njenny()",
+        "detail": "Lesson 12.closure",
+        "documentation": {}
+    },
+    {
+        "label": "jenny",
+        "kind": 5,
+        "importPath": "Lesson 12.closure",
+        "description": "Lesson 12.closure",
+        "peekOfCode": "jenny = parent_function(\"Jenny\")\ntommy()\ntommy()\njenny()",
+        "detail": "Lesson 12.closure",
+        "documentation": {}
+    },
+    {
         "label": "line01",
         "kind": 5,
         "importPath": "Lesson 2.welcome",
