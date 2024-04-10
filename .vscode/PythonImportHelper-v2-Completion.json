@@ -42,6 +42,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -102,6 +110,69 @@
         "description": "Lesson 10.rps3",
         "peekOfCode": "def play_rps():\n    # Constants are always in CAPS\n    class RPS(Enum):\n        ROCK = 1\n        PAPER = 2\n        SCISSORS = 3\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\n    # Let's introduce some control-flow statements",
         "detail": "Lesson 10.rps3",
+        "documentation": {}
+    },
+    {
+        "label": "play_rps",
+        "kind": 2,
+        "importPath": "Lesson 11.rps4",
+        "description": "Lesson 11.rps4",
+        "peekOfCode": "def play_rps():\n    # Constants are always in CAPS\n    class RPS(Enum):\n        ROCK = 1\n        PAPER = 2\n        SCISSORS = 3\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\n    # Let's introduce some control-flow statements",
+        "detail": "Lesson 11.rps4",
+        "documentation": {}
+    },
+    {
+        "label": "game_count",
+        "kind": 5,
+        "importPath": "Lesson 11.rps4",
+        "description": "Lesson 11.rps4",
+        "peekOfCode": "game_count = 0\ndef play_rps():\n    # Constants are always in CAPS\n    class RPS(Enum):\n        ROCK = 1\n        PAPER = 2\n        SCISSORS = 3\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")",
+        "detail": "Lesson 11.rps4",
+        "documentation": {}
+    },
+    {
+        "label": "greeting",
+        "kind": 2,
+        "importPath": "Lesson 11.scope",
+        "description": "Lesson 11.scope",
+        "peekOfCode": "def greeting(name):\n    color = \"Blue\"\n    # Local scope.\n    # In this case color can only be accessed from within the function.\n    # Trying to access this color variable outside will give you some problems.\n    # However, the global variable is still accessible from inside here.\n    print(color)\n    print(name)\n    # The name that is passed here is local and not the global variable name we see up there.\ngreeting(\"John\\n\\n\")",
+        "detail": "Lesson 11.scope",
+        "documentation": {}
+    },
+    {
+        "label": "another",
+        "kind": 2,
+        "importPath": "Lesson 11.scope",
+        "description": "Lesson 11.scope",
+        "peekOfCode": "def another():\n    # In this case the color variable is in the parent scope (that is another).\n    color = \"Blue\"\n    # And this function is only available inside the another function and not the global scope.\n    def greeting(name):\n        print(color)\n        print(name)\n    greeting(\"Dave\")\nanother()\n# Like shown above you could have a nested function strictly because you only need that function within that function.",
+        "detail": "Lesson 11.scope",
+        "documentation": {}
+    },
+    {
+        "label": "another1",
+        "kind": 2,
+        "importPath": "Lesson 11.scope",
+        "description": "Lesson 11.scope",
+        "peekOfCode": "def another1():\n    color = \"Blue\"\n    # When I create a count here, that is treated like a new variable and not a reassignment.\n    # count = 5\n    # print(count)\n    # You can access the global count but not modify it, it throws an error.\n    # count += 1\n    # print(count)\n    # To use the global value from above we use the global keyword.\n    global count",
+        "detail": "Lesson 11.scope",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Lesson 11.scope",
+        "description": "Lesson 11.scope",
+        "peekOfCode": "name = \"Dave\"\ncount = 1\n# Now we create a function that has local scope and this global variable will still be available there\ndef greeting(name):\n    color = \"Blue\"\n    # Local scope.\n    # In this case color can only be accessed from within the function.\n    # Trying to access this color variable outside will give you some problems.\n    # However, the global variable is still accessible from inside here.\n    print(color)",
+        "detail": "Lesson 11.scope",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Lesson 11.scope",
+        "description": "Lesson 11.scope",
+        "peekOfCode": "count = 1\n# Now we create a function that has local scope and this global variable will still be available there\ndef greeting(name):\n    color = \"Blue\"\n    # Local scope.\n    # In this case color can only be accessed from within the function.\n    # Trying to access this color variable outside will give you some problems.\n    # However, the global variable is still accessible from inside here.\n    print(color)\n    print(name)",
+        "detail": "Lesson 11.scope",
         "documentation": {}
     },
     {
