@@ -1,14 +1,5 @@
 [
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -43,12 +34,74 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "greeting",
         "kind": 5,
         "importPath": "Lesson 1.kemCho",
         "description": "Lesson 1.kemCho",
         "peekOfCode": "greeting = 'Kem Cho?'\nprint(greeting)",
         "detail": "Lesson 1.kemCho",
+        "documentation": {}
+    },
+    {
+        "label": "value",
+        "kind": 5,
+        "importPath": "Lesson 10.example",
+        "description": "Lesson 10.example",
+        "peekOfCode": "value = True\ncount = 0\n# This statement assumes that while value is true or exists, it will execute.\nwhile value:\n    count += 1\n    print(count)\n    if(count == 5):\n        break\n    else:\n        value = False # Or use a zero to do the same thing.",
+        "detail": "Lesson 10.example",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Lesson 10.example",
+        "description": "Lesson 10.example",
+        "peekOfCode": "count = 0\n# This statement assumes that while value is true or exists, it will execute.\nwhile value:\n    count += 1\n    print(count)\n    if(count == 5):\n        break\n    else:\n        value = False # Or use a zero to do the same thing.\n        continue",
+        "detail": "Lesson 10.example",
+        "documentation": {}
+    },
+    {
+        "label": "add_one",
+        "kind": 2,
+        "importPath": "Lesson 10.recursion",
+        "description": "Lesson 10.recursion",
+        "peekOfCode": "def add_one(num):\n    if (num >= 9 ):\n        return num + 1\n    total = num + 1\n    print(total)\n    return add_one(total) # This return keyword is absolutely essential for recursion or else it returns a none.\n# To see the output of 10 we first need a variable we can print.\noutput = add_one(0)\nprint(\"Your output is \" + str(output))",
+        "detail": "Lesson 10.recursion",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "Lesson 10.recursion",
+        "description": "Lesson 10.recursion",
+        "peekOfCode": "output = add_one(0)\nprint(\"Your output is \" + str(output))",
+        "detail": "Lesson 10.recursion",
+        "documentation": {}
+    },
+    {
+        "label": "play_rps",
+        "kind": 2,
+        "importPath": "Lesson 10.rps3",
+        "description": "Lesson 10.rps3",
+        "peekOfCode": "def play_rps():\n    # Constants are always in CAPS\n    class RPS(Enum):\n        ROCK = 1\n        PAPER = 2\n        SCISSORS = 3\n    # Now we start coding the Rock-Paper-Scissors game.\n    print(\"\")\n    player_choice = input(\"Enter...\\n1 for Rock 🪨, \\n2 for Paper 📄, \\nor \\n3 for Scissors ✂️:\\n\\n\")\n    # Let's introduce some control-flow statements",
+        "detail": "Lesson 10.rps3",
         "documentation": {}
     },
     {
