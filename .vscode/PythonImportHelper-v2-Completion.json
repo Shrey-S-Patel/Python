@@ -229,6 +229,150 @@
         "documentation": {}
     },
     {
+        "label": "person",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "person = \"Dave\"\ncoins = 3\nprint(\"\\n\" + person + \" has \" + str(coins) + \" coins left.\")\n# There's definitely a better way to do this.\n# Here are some old ways to do it.\n# This is the %s method, order matters.\ncoins = 4\nmessage = \"\\n%s has %s coins left.\" % (person, coins)\nprint(message)\n# This is the newer format method, order matters.",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "coins = 3\nprint(\"\\n\" + person + \" has \" + str(coins) + \" coins left.\")\n# There's definitely a better way to do this.\n# Here are some old ways to do it.\n# This is the %s method, order matters.\ncoins = 4\nmessage = \"\\n%s has %s coins left.\" % (person, coins)\nprint(message)\n# This is the newer format method, order matters.\ncoins = 5",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "coins = 4\nmessage = \"\\n%s has %s coins left.\" % (person, coins)\nprint(message)\n# This is the newer format method, order matters.\ncoins = 5\nmessage = \"\\n{} has {} coins left.\".format(person, coins)\nprint(message)\n# This is the newer format method, here we change order using indices.\ncoins = 6\nmessage = \"\\n{1} has {0} coins left.\".format( coins, person)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = \"\\n%s has %s coins left.\" % (person, coins)\nprint(message)\n# This is the newer format method, order matters.\ncoins = 5\nmessage = \"\\n{} has {} coins left.\".format(person, coins)\nprint(message)\n# This is the newer format method, here we change order using indices.\ncoins = 6\nmessage = \"\\n{1} has {0} coins left.\".format( coins, person)\nprint(message)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "coins = 5\nmessage = \"\\n{} has {} coins left.\".format(person, coins)\nprint(message)\n# This is the newer format method, here we change order using indices.\ncoins = 6\nmessage = \"\\n{1} has {0} coins left.\".format( coins, person)\nprint(message)\n# This is the newer format method and we can assign using names.\ncoins = 7\nmessage = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = \"\\n{} has {} coins left.\".format(person, coins)\nprint(message)\n# This is the newer format method, here we change order using indices.\ncoins = 6\nmessage = \"\\n{1} has {0} coins left.\".format( coins, person)\nprint(message)\n# This is the newer format method and we can assign using names.\ncoins = 7\nmessage = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)\nprint(message)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "coins = 6\nmessage = \"\\n{1} has {0} coins left.\".format( coins, person)\nprint(message)\n# This is the newer format method and we can assign using names.\ncoins = 7\nmessage = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)\nprint(message)\n# This is the newer format method and we can assign using a dictionary but it is case-sensitive.\nplayer = {'person': 'Dave', 'coins':8}\nmessage = \"\\n{person} has {coins} coins left.\".format(**player)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = \"\\n{1} has {0} coins left.\".format( coins, person)\nprint(message)\n# This is the newer format method and we can assign using names.\ncoins = 7\nmessage = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)\nprint(message)\n# This is the newer format method and we can assign using a dictionary but it is case-sensitive.\nplayer = {'person': 'Dave', 'coins':8}\nmessage = \"\\n{person} has {coins} coins left.\".format(**player)\nprint(message)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "coins = 7\nmessage = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)\nprint(message)\n# This is the newer format method and we can assign using a dictionary but it is case-sensitive.\nplayer = {'person': 'Dave', 'coins':8}\nmessage = \"\\n{person} has {coins} coins left.\".format(**player)\nprint(message)\n#################################################\n# Now we get to use the latest method - F-Strings\nmessage = f\"\\n{person} has {coins} coins left.\"",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = \"\\n{person} has {coins} coins left.\".format( coins = coins, person = person)\nprint(message)\n# This is the newer format method and we can assign using a dictionary but it is case-sensitive.\nplayer = {'person': 'Dave', 'coins':8}\nmessage = \"\\n{person} has {coins} coins left.\".format(**player)\nprint(message)\n#################################################\n# Now we get to use the latest method - F-Strings\nmessage = f\"\\n{person} has {coins} coins left.\"\nprint(message)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "player = {'person': 'Dave', 'coins':8}\nmessage = \"\\n{person} has {coins} coins left.\".format(**player)\nprint(message)\n#################################################\n# Now we get to use the latest method - F-Strings\nmessage = f\"\\n{person} has {coins} coins left.\"\nprint(message)\n# You can also use calculations directly.\nmessage = f\"\\n{person.lower()} has {2*5} coins left.\"\nprint(message)",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = \"\\n{person} has {coins} coins left.\".format(**player)\nprint(message)\n#################################################\n# Now we get to use the latest method - F-Strings\nmessage = f\"\\n{person} has {coins} coins left.\"\nprint(message)\n# You can also use calculations directly.\nmessage = f\"\\n{person.lower()} has {2*5} coins left.\"\nprint(message)\n# You can also use calculations directly.",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = f\"\\n{person} has {coins} coins left.\"\nprint(message)\n# You can also use calculations directly.\nmessage = f\"\\n{person.lower()} has {2*5} coins left.\"\nprint(message)\n# You can also use calculations directly.\nmessage = f\"\\n{player['person']} has {player['coins']} coins left.\"\nprint(message)\n#################################################\n# You can pass formatting options to the method.",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = f\"\\n{person.lower()} has {2*5} coins left.\"\nprint(message)\n# You can also use calculations directly.\nmessage = f\"\\n{player['person']} has {player['coins']} coins left.\"\nprint(message)\n#################################################\n# You can pass formatting options to the method.\n# We'll use the colon.\nnum = 10\nprint(f\"\\n2.25 times {num} is {2.25 * num:.2f}\\n\")",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "message = f\"\\n{player['person']} has {player['coins']} coins left.\"\nprint(message)\n#################################################\n# You can pass formatting options to the method.\n# We'll use the colon.\nnum = 10\nprint(f\"\\n2.25 times {num} is {2.25 * num:.2f}\\n\")\nfor num in range(1,11):\n    print(f\"2.25 times {num} is {2.25 * num:.2f}\")\nfor num in range(1,11):",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "Lesson 13.f_strings",
+        "description": "Lesson 13.f_strings",
+        "peekOfCode": "num = 10\nprint(f\"\\n2.25 times {num} is {2.25 * num:.2f}\\n\")\nfor num in range(1,11):\n    print(f\"2.25 times {num} is {2.25 * num:.2f}\")\nfor num in range(1,11):\n    print(f\"{num} divided by 4.52 is {num / 4.52:.2%}\")",
+        "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
         "label": "line01",
         "kind": 5,
         "importPath": "Lesson 2.welcome",
