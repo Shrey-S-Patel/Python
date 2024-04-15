@@ -58,6 +58,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -370,6 +378,24 @@
         "description": "Lesson 13.f_strings",
         "peekOfCode": "num = 10\nprint(f\"\\n2.25 times {num} is {2.25 * num:.2f}\\n\")\nfor num in range(1,11):\n    print(f\"2.25 times {num} is {2.25 * num:.2f}\")\nfor num in range(1,11):\n    print(f\"{num} divided by 4.52 is {num / 4.52:.2%}\")",
         "detail": "Lesson 13.f_strings",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 2,
+        "importPath": "Lesson 13.rps6",
+        "description": "Lesson 13.rps6",
+        "peekOfCode": "def rps():\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):\n            ROCK = 1",
+        "detail": "Lesson 13.rps6",
+        "documentation": {}
+    },
+    {
+        "label": "play",
+        "kind": 5,
+        "importPath": "Lesson 13.rps6",
+        "description": "Lesson 13.rps6",
+        "peekOfCode": "play = rps()",
+        "detail": "Lesson 13.rps6",
         "documentation": {}
     },
     {
