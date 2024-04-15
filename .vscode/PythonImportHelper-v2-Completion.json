@@ -50,6 +50,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -200,6 +208,24 @@
         "description": "Lesson 12.closure",
         "peekOfCode": "jenny = parent_function(\"Jenny\", 5)\ntommy()\ntommy()\njenny()\ntommy()",
         "detail": "Lesson 12.closure",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 2,
+        "importPath": "Lesson 12.rps5",
+        "description": "Lesson 12.rps5",
+        "peekOfCode": "def rps():\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):\n            ROCK = 1",
+        "detail": "Lesson 12.rps5",
+        "documentation": {}
+    },
+    {
+        "label": "play",
+        "kind": 5,
+        "importPath": "Lesson 12.rps5",
+        "description": "Lesson 12.rps5",
+        "peekOfCode": "play = rps()",
+        "detail": "Lesson 12.rps5",
         "documentation": {}
     },
     {
