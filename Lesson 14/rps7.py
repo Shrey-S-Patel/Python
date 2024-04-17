@@ -18,7 +18,8 @@ def rps():
             SCISSORS = 3
 
         # Now we start coding the Rock-Paper-Scissors game.
-        player_choice = input("\nEnter...\n1 for Rock 🪨, \n2 for Paper 📄, \nor \n3 for Scissors ✂️:\n\n")
+        print("")
+        player_choice = input("Enter...\n1 for Rock 🪨, \n2 for Paper 📄, \nor \n3 for Scissors ✂️:\n\n")
         
         # Let's introduce some control-flow statements
         if player_choice not in ["1","2","3"]:
@@ -30,8 +31,8 @@ def rps():
         computer_choice = random.choice("123")
         computer = int(computer_choice)
 
-        print(f'\nYou chose {str(RPS(player)).replace("RPS.", "").title()}.')
-        print(f'\nPython chose {str(RPS(computer)).replace("RPS.", "").title()}.\n')
+        print(f"\nYou chose {str(RPS(player)).replace("RPS.", "").title()}.")
+        print(f"\nPython chose {str(RPS(computer)).replace("RPS.", "").title()}.\n")
         
         def decide_winner(player, computer):
             nonlocal player_wins
@@ -82,6 +83,7 @@ def rps():
 
     return play_rps
 
-play = rps()
+rock_paper_scissors = rps()
 
-play()
+if __name__ == "__main__":
+    rock_paper_scissors()

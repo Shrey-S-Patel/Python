@@ -18,6 +18,30 @@
         "documentation": {}
     },
     {
+        "label": "choice",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -72,6 +96,31 @@
         "importPath": "math",
         "description": "math",
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "rock_paper_scissors",
+        "importPath": "rps7",
+        "description": "rps7",
+        "isExtraImport": true,
+        "detail": "rps7",
+        "documentation": {}
+    },
+    {
+        "label": "kenya",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "kenya",
+        "description": "kenya",
+        "detail": "kenya",
         "documentation": {}
     },
     {
@@ -394,8 +443,80 @@
         "kind": 5,
         "importPath": "Lesson 13.rps6",
         "description": "Lesson 13.rps6",
-        "peekOfCode": "play = rps()",
+        "peekOfCode": "play = rps()\nplay()",
         "detail": "Lesson 13.rps6",
+        "documentation": {}
+    },
+    {
+        "label": "randomfunfact",
+        "kind": 2,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "def randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])\n# Using this control statement prevents this function from being run unless it is explicitly called.\nif __name__ == \"__main__\":\n    randomfunfact()",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "capital",
+        "kind": 5,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "capital = \"Nairobi\"\nbird = \"Lilac-breasted Roller\"\nlanguage = \"Swahili\"\nflower = \"Orchid\"\nsong = \"Ee Mungu Nguvu Yetu\"\ndef randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "bird",
+        "kind": 5,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "bird = \"Lilac-breasted Roller\"\nlanguage = \"Swahili\"\nflower = \"Orchid\"\nsong = \"Ee Mungu Nguvu Yetu\"\ndef randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])\n# Using this control statement prevents this function from being run unless it is explicitly called.",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "language",
+        "kind": 5,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "language = \"Swahili\"\nflower = \"Orchid\"\nsong = \"Ee Mungu Nguvu Yetu\"\ndef randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])\n# Using this control statement prevents this function from being run unless it is explicitly called.\nif __name__ == \"__main__\":",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "flower",
+        "kind": 5,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "flower = \"Orchid\"\nsong = \"Ee Mungu Nguvu Yetu\"\ndef randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])\n# Using this control statement prevents this function from being run unless it is explicitly called.\nif __name__ == \"__main__\":\n    randomfunfact()",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "song",
+        "kind": 5,
+        "importPath": "Lesson 14.kenya",
+        "description": "Lesson 14.kenya",
+        "peekOfCode": "song = \"Ee Mungu Nguvu Yetu\"\ndef randomfunfact():\n    random_fun_fact = [\"62 languages are spoken across Kenya\", \"Kenya is home to Africa’s second-highest mountain\",\n    \"The first African woman to win the Nobel Peace Prize is from Kenya.\", \"Kenya is home to world record breakers.\"]\n    index = choice(\"0123\")\n    print(random_fun_fact[int(index)])\n# Using this control statement prevents this function from being run unless it is explicitly called.\nif __name__ == \"__main__\":\n    randomfunfact()",
+        "detail": "Lesson 14.kenya",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 2,
+        "importPath": "Lesson 14.rps7",
+        "description": "Lesson 14.rps7",
+        "peekOfCode": "def rps():\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):\n            ROCK = 1",
+        "detail": "Lesson 14.rps7",
+        "documentation": {}
+    },
+    {
+        "label": "rock_paper_scissors",
+        "kind": 5,
+        "importPath": "Lesson 14.rps7",
+        "description": "Lesson 14.rps7",
+        "peekOfCode": "rock_paper_scissors = rps()\nif __name__ == \"__main__\":\n    rock_paper_scissors()",
+        "detail": "Lesson 14.rps7",
         "documentation": {}
     },
     {
