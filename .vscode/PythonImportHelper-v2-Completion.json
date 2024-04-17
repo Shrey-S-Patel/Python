@@ -90,6 +90,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -517,6 +525,24 @@
         "description": "Lesson 14.rps7",
         "peekOfCode": "rock_paper_scissors = rps()\nif __name__ == \"__main__\":\n    rock_paper_scissors()",
         "detail": "Lesson 14.rps7",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "Lesson 15.hello_person",
+        "description": "Lesson 15.hello_person",
+        "peekOfCode": "def hello(name, lang):\n    greetings = {\n        \"English\": \"Hello\",\n        \"Spanish\": \"Ola\",\n        \"German\": \"Hallo\"\n    }\n    msg = f\"{greetings[lang]} {name}!\"\n    print(msg)\nif __name__ == \"__main__\":\n    import argparse",
+        "detail": "Lesson 15.hello_person",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 2,
+        "importPath": "Lesson 15.rps8",
+        "description": "Lesson 15.rps8",
+        "peekOfCode": "def rps(name = \"PlayerOne\"):\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal name\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):",
+        "detail": "Lesson 15.rps8",
         "documentation": {}
     },
     {
