@@ -98,6 +98,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -129,6 +137,23 @@
         "importPath": "kenya",
         "description": "kenya",
         "detail": "kenya",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rps",
+        "description": "rps",
+        "detail": "rps",
+        "documentation": {}
+    },
+    {
+        "label": "guess_number",
+        "importPath": "guess_number",
+        "description": "guess_number",
+        "isExtraImport": true,
+        "detail": "guess_number",
         "documentation": {}
     },
     {
@@ -543,6 +568,33 @@
         "description": "Lesson 15.rps8",
         "peekOfCode": "def rps(name = \"PlayerOne\"):\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal name\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):",
         "detail": "Lesson 15.rps8",
+        "documentation": {}
+    },
+    {
+        "label": "play_game",
+        "kind": 2,
+        "importPath": "Lesson 16.arcade",
+        "description": "Lesson 16.arcade",
+        "peekOfCode": "def play_game(name = \"playerOne\"):\n    welcome_back = False\n    while True:\n        if welcome_back == True:\n            print(f\"\\n{name}, welcome back to the Arcade menu! 🤖\")\n        gameChoice = input(\"\\nPlease choose a game: \\n1 = Rock Paper Scissors \\n2 = Guess My Number \\nOr press 'X' to exit the Arcade.\\n\\n\")\n        if gameChoice.lower() not in [\"1\", \"2\", \"x\"]:\n            print(f\"\\n{name}, Please enter either 1, 2 or x.\\n\")\n            return play_game(name)\n        welcome_back = True",
+        "detail": "Lesson 16.arcade",
+        "documentation": {}
+    },
+    {
+        "label": "guess_number",
+        "kind": 2,
+        "importPath": "Lesson 16.guess_number",
+        "description": "Lesson 16.guess_number",
+        "peekOfCode": "def guess_number(name='PlayerOne'):\n    game_count = 0\n    player_wins = 0\n    def play_guess_number():\n        nonlocal name\n        nonlocal player_wins\n        playerchoice = input(\n            f\"\\n{name}, guess which number I'm thinking of... 1, 2, or 3.\\n\\n\")\n        if playerchoice not in [\"1\", \"2\", \"3\"]:\n            print(f\"{name}, please enter 1, 2, or 3.\")",
+        "detail": "Lesson 16.guess_number",
+        "documentation": {}
+    },
+    {
+        "label": "rps",
+        "kind": 2,
+        "importPath": "Lesson 16.rps",
+        "description": "Lesson 16.rps",
+        "peekOfCode": "def rps(name = \"PlayerOne\"):\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal name\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):",
+        "detail": "Lesson 16.rps",
         "documentation": {}
     },
     {
