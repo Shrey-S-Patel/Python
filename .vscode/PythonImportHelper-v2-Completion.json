@@ -157,6 +157,14 @@
         "documentation": {}
     },
     {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
         "label": "greeting",
         "kind": 5,
         "importPath": "Lesson 1.kemCho",
@@ -595,6 +603,123 @@
         "description": "Lesson 16.rps",
         "peekOfCode": "def rps(name = \"PlayerOne\"):\n    game_count = 0\n    player_wins = 0\n    python_wins = 0\n    def play_rps():\n        nonlocal name\n        nonlocal player_wins\n        nonlocal python_wins\n        # Constants are always in CAPS\n        class RPS(Enum):",
         "detail": "Lesson 16.rps",
+        "documentation": {}
+    },
+    {
+        "label": "func_builder",
+        "kind": 2,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "def func_builder(x):\n    return lambda num : num + x\naddTen = func_builder(10)\naddTwenty = func_builder(20)\nprint(addTen(7))\nprint(addTwenty(7))\n#################################################\n# A higher order function is a function that takes one or more functions as arguments \n# or a function that returns a function as its result.\nnumbers = [3,7,10,12,15,18,20]",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "square = lambda num : num * num\nprint(square(2))\naddTwo = lambda num : num + 2\nprint(addTwo(5))\nsum_total = lambda a, b: a + b\nprint(sum_total(2,6))\n#################################################\n# These are most often used within another function as a quick and easy function.\n# Instead of writing a whole new function, it is a quick and easy function.\ndef func_builder(x):",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "addTwo",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "addTwo = lambda num : num + 2\nprint(addTwo(5))\nsum_total = lambda a, b: a + b\nprint(sum_total(2,6))\n#################################################\n# These are most often used within another function as a quick and easy function.\n# Instead of writing a whole new function, it is a quick and easy function.\ndef func_builder(x):\n    return lambda num : num + x\naddTen = func_builder(10)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "sum_total",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "sum_total = lambda a, b: a + b\nprint(sum_total(2,6))\n#################################################\n# These are most often used within another function as a quick and easy function.\n# Instead of writing a whole new function, it is a quick and easy function.\ndef func_builder(x):\n    return lambda num : num + x\naddTen = func_builder(10)\naddTwenty = func_builder(20)\nprint(addTen(7))",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "addTen",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "addTen = func_builder(10)\naddTwenty = func_builder(20)\nprint(addTen(7))\nprint(addTwenty(7))\n#################################################\n# A higher order function is a function that takes one or more functions as arguments \n# or a function that returns a function as its result.\nnumbers = [3,7,10,12,15,18,20]\n# Map is a function that first receives a function as its first argument and a data collection as the second.\n# It applies the function to every item in the collection and returns it.",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "addTwenty",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "addTwenty = func_builder(20)\nprint(addTen(7))\nprint(addTwenty(7))\n#################################################\n# A higher order function is a function that takes one or more functions as arguments \n# or a function that returns a function as its result.\nnumbers = [3,7,10,12,15,18,20]\n# Map is a function that first receives a function as its first argument and a data collection as the second.\n# It applies the function to every item in the collection and returns it.\nsquared_nums = map(lambda num: num * num, numbers)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "numbers = [3,7,10,12,15,18,20]\n# Map is a function that first receives a function as its first argument and a data collection as the second.\n# It applies the function to every item in the collection and returns it.\nsquared_nums = map(lambda num: num * num, numbers)\nprint(list(squared_nums))\n#################################################\n# Filter only returns the values that are true.\nodd_nums = filter(lambda num: num % 2 != 0, numbers)\nprint(list(odd_nums))\n#################################################",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "squared_nums",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "squared_nums = map(lambda num: num * num, numbers)\nprint(list(squared_nums))\n#################################################\n# Filter only returns the values that are true.\nodd_nums = filter(lambda num: num % 2 != 0, numbers)\nprint(list(odd_nums))\n#################################################\nfrom functools import reduce\nnumbers = [1,2,3,4,5,1]\ntotal = reduce(lambda acc, curr: acc + curr, numbers, 10)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "odd_nums",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "odd_nums = filter(lambda num: num % 2 != 0, numbers)\nprint(list(odd_nums))\n#################################################\nfrom functools import reduce\nnumbers = [1,2,3,4,5,1]\ntotal = reduce(lambda acc, curr: acc + curr, numbers, 10)\nprint(total)\nprint(sum(numbers, 10))\nnames = ['Dave grey', 'Sarah Jones', 'Nick Jonas', 'Alliah Mendez']\nchar_count = reduce(lambda acc, curr: acc + len(curr), names, 0)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "numbers = [1,2,3,4,5,1]\ntotal = reduce(lambda acc, curr: acc + curr, numbers, 10)\nprint(total)\nprint(sum(numbers, 10))\nnames = ['Dave grey', 'Sarah Jones', 'Nick Jonas', 'Alliah Mendez']\nchar_count = reduce(lambda acc, curr: acc + len(curr), names, 0)\nprint(char_count)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "total = reduce(lambda acc, curr: acc + curr, numbers, 10)\nprint(total)\nprint(sum(numbers, 10))\nnames = ['Dave grey', 'Sarah Jones', 'Nick Jonas', 'Alliah Mendez']\nchar_count = reduce(lambda acc, curr: acc + len(curr), names, 0)\nprint(char_count)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "names = ['Dave grey', 'Sarah Jones', 'Nick Jonas', 'Alliah Mendez']\nchar_count = reduce(lambda acc, curr: acc + len(curr), names, 0)\nprint(char_count)",
+        "detail": "Lesson 17.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "char_count",
+        "kind": 5,
+        "importPath": "Lesson 17.lambda",
+        "description": "Lesson 17.lambda",
+        "peekOfCode": "char_count = reduce(lambda acc, curr: acc + len(curr), names, 0)\nprint(char_count)",
+        "detail": "Lesson 17.lambda",
         "documentation": {}
     },
     {
